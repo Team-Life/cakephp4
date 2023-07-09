@@ -1,0 +1,8 @@
+services:
+  cakephp-app:
+    container_name: cakephp-app
+    build: .
+    volumes: 
+      - ./cake-app:/var/www/html
+    ports:
+      - 8000:80
